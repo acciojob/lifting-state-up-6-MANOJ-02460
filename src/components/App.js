@@ -32,7 +32,7 @@ const App = () => {
       <ul>
         <h2>Child Component</h2>
         {todo.map((item, index) => (
-          <Todo key={item.id} item={item} isCompleted={handleComplete} />
+          <Todo key={item.id} item={item} handleComplete={handleComplete} />
         ))}
     </ul>
       

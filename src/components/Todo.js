@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Todo = ({item,isCompleted}) => {
+const Todo = ({item,handleComplete}) => {
 
     const {id, course, completed} = item
     
@@ -9,7 +9,7 @@ const Todo = ({item,isCompleted}) => {
         <ul >
             <li key={id} style={{marginTop:'10px'}}>{course}
                {!completed && (
-                <button onClick={()=> isCompleted(id)}>Complete</button>
+                <button onClick={()=> handleComplete(id)}>Complete</button>
                )}
             </li>
         </ul>
